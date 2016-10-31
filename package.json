@@ -27,6 +27,7 @@
     "babel-preset-es2015-native-modules": "^6.6.0"
   },
   "dependencies": {
+    "lodash": "^4.16.5",
     "lodash-es": "^4.16.4"
   }
 }

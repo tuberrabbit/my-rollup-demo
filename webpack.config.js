@@ -15,7 +15,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
+                //exclude: /node_modules/,
                 loaders: [
                     'babel-loader'
                 ]
@@ -30,10 +30,10 @@ module.exports = {
         ]
     },
     plugins: [
-        //new webpack.LoaderOptionsPlugin({
-        //    minimize: true,
-        //    debug: false
-        //}),
+        new webpack.LoaderOptionsPlugin({
+            minimize: true,
+            debug: false
+        }),
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
