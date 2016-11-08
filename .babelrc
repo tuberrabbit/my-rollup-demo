@@ -1,3 +1,4 @@
 {
-    "presets": ["es2015-native-modules"]
+    "plugins": ["lodash"],
+    "presets": ["es2015"]
 }
